@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12970" started-at="2019-06-01T15:34:09Z" finished-at="2019-06-01T15:34:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12970" started-at="2019-06-01T15:34:09Z" finished-at="2019-06-01T15:34:22Z">
+      <class name="com.capsulecrm.qa.tests.AccountSettingTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.capsulecrm.qa.tests.AccountSettingTest@5a8e6209]" name="setup" is-config="true" duration-ms="10260" started-at="2019-06-01T15:34:09Z" finished-at="2019-06-01T15:34:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="AccountSettingValidTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.capsulecrm.qa.tests.AccountSettingTest@5a8e6209]" name="AccountSettingValidTest" duration-ms="1358" started-at="2019-06-01T15:34:19Z" data-provider="testdata" finished-at="2019-06-01T15:34:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Varkey]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[anu@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[anuv]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Review]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Architect]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountSettingValidTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capsulecrm.qa.tests.AccountSettingTest@5a8e6209]" name="tearDown" is-config="true" duration-ms="885" started-at="2019-06-01T15:34:21Z" finished-at="2019-06-01T15:34:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AccountSettingValidTest status=SUCCESS method=AccountSettingTest.AccountSettingValidTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.capsulecrm.qa.tests.AccountSettingTest@5a8e6209] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capsulecrm.qa.tests.AccountSettingTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
