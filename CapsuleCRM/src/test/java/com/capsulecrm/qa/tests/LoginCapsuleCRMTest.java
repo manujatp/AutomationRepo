@@ -52,9 +52,9 @@ public class LoginCapsuleCRMTest extends TestBase {
 
 		//Validating LoginPage Title
 		String actualtilte = login.getTitle();
-		String exptitle = "ManujaNikiitha CRM";
+		String exptitle = "StraithairdPS CRM";
 		String msg = "Actual Tilte is not same as expected";
-	//	ElementsUtil.Assert(actualtilte, exptitle, msg);
+		ElementsUtil.Assert(actualtilte, exptitle, msg);
 
 		//Login into CapsuleCRM
 		home = login.Login(prop.getProperty("username"), prop.getProperty("password"));
@@ -62,8 +62,8 @@ public class LoginCapsuleCRMTest extends TestBase {
 
 		//Validating HomePage Title	
 		actualtilte = login.getTitle();
-		exptitle = "Dashboard | ManujaNikiitha CRM";
-//		ElementsUtil.Assert(actualtilte, exptitle, msg);
+		exptitle = "Dashboard | StraithairdPS CRM";
+		ElementsUtil.Assert(actualtilte, exptitle, msg);
 
 		//Adding persons
 		person = home.clickPeopleLink();
