@@ -26,18 +26,18 @@ public class TaskCategoriesPage extends TestBase {
 	@FindBy(id = "editCategoryForm:taskCategoryNameDecorate:taskCategoryName")
 	private WebElement _taskCatNameTxtElement;
 
-	@FindBy(id = "editCategoryForm:j_id175")
+	@FindBy(xpath = "//input[contains(@id,'editCategoryForm:')]")
 	private WebElement _saveBtnElement;
 
 
-	@FindBy(xpath = "//table[@id = 'j_id124:stages']//tbody//tr//td[2]//a")
+	@FindBy(xpath = "//table[contains(@id, ':stages')]//tbody//tr//td[2]//a")
 	private List<WebElement> _tasksList;
 
-	@FindBy(xpath = "//table[@id = 'j_id124:stages']//tbody//tr//td[3]//a")
+	@FindBy(xpath = "//table[contains(@id, ':stages')]//tbody//tr//td[3]//a")
 	private List<WebElement> _deleteTasksList;
 
 
-	@FindBy(id = "//form[@id='j_id150']//input[contains(@class, 'btn-danger')]")
+	@FindBy(id = "//form[contains(@id,'j_id')]//input[contains(@class, 'btn-danger')]")
 	private WebElement _deleteBtnElement;
 
 	//Constructor

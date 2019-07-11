@@ -38,7 +38,7 @@ public class UsersPage extends TestBase {
 	private WebElement _inviteUserBtnElement;
 
 
-	@FindBy(xpath = "//table[@id = 'j_id128:users']//tbody//tr//td[2]")
+	@FindBy(xpath = "//table[contains(@id,':users']//tbody//tr//td[2]")
 	private List<WebElement> _userNamesList;
 
 	//Constructor

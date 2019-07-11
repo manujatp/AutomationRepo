@@ -80,6 +80,31 @@ public class ElementsUtil {
 		actions.moveToElement(el).click().perform();
 
 	}
+	
+	//click by Action
+		public static void performSet( WebElement el1,List<WebElement> el2, WebDriver driver,String msg){
+			wait(driver,el1);
+			el1.sendKeys(msg);
+			boolean flag = false;
+			Actions actions = new Actions(driver);
+			int i ;
+			
+			for(i=0; i<el2.size(); ++i) 
+				if(el2.get(i).getText().contains(msg)) {
+					flag = true;
+				    break;
+			}
+			
+			
+			if(flag)
+			actions.moveToElement(el2.get(i)).click().perform();
+			
+			else {
+				System.out.println("The person "+ msg + " is not in the list");
+			}
+				
+
+		}
 	//wait()
 	private static void wait(WebDriver driver, WebElement el) {
 		WebDriverWait wait = new WebDriverWait(driver, EXPLICIT_WAIT);

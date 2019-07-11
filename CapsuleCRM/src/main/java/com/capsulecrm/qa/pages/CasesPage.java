@@ -20,13 +20,17 @@ public class CasesPage {
 	@FindBy(xpath ="//a[text()='Add Case']")
 	private WebElement _addCaseBtnElement;
 
-	@FindBy(id ="partySearch")
+	@FindBy(xpath ="//input[@class ='search-select-input ember-view']")
 	private WebElement _searchPersonElement;
+	
+	@FindBy(xpath ="//span[@class='search-select-option-party']//span[@class='search-select-option-text']")
+	private List<WebElement> _searchPersonListElement;
+	//span[@class='search-select-option-party']//span[@class='search-select-option-text']
 
-	@FindBy(id ="caseNameDecorate:name")
+	@FindBy(xpath ="//input[@class='form-input-text']")
 	private WebElement _caseNameTxtElement;
 
-	@FindBy(id ="caseDescriptionDecorate:description")
+	@FindBy(xpath ="//div[@class='form-field  full-width']//textarea")
 	private WebElement _descrCaseTxtElement;
 
 	@FindBy(id ="tagsDecorate:tagComboBox")
@@ -54,7 +58,7 @@ public class CasesPage {
 	public void AddCase(String personname, String casename, String description, String tag) {
 
 		ElementsUtil.clickByExplicitWait(_addCaseBtnElement, driver);
-		ElementsUtil.setByExplicitWait(_searchPersonElement, driver, personname);
+		ElementsUtil.performSet(_searchPersonElement,_searchPersonListElement, driver, personname);
 		ElementsUtil.setByExplicitWait(_caseNameTxtElement, driver, casename);
 		ElementsUtil.setByExplicitWait(_descrCaseTxtElement, driver, description);
 		ElementsUtil.setByExplicitWait(_tagCaseTxtElement, driver, tag);

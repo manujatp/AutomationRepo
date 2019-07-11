@@ -10,6 +10,13 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.capsulecrm.qa.tests.LoginCapsuleCRMTest -->
+      <class name="com.capsulecrm.qa.tests.AccountSettingTest">
+        <methods>
+          <include name="AccountSettingValidTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.capsulecrm.qa.tests.AccountSettingTest -->
     </classes>
   </test> <!-- CapsuleTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

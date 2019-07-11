@@ -1,2 +1,3 @@
-2019-06-02 01:34:19 INFO  TestBase:43 - ***********Login to CapsuleCRM*************
-2019-06-02 01:34:21 INFO  TestBase:137 - ******Test case is passed is  AccountSettingValidTest
+2019-07-04 08:29:43 INFO  TestBase:43 - ***********Login to CapsuleCRM*************
+2019-07-04 08:29:49 INFO  TestBase:146 - ********Boby Haridas is successfully added*********
+2019-07-04 08:30:32 ERROR TestBase:130 - ?????Test case failed is LoginTest

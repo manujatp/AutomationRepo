@@ -1,5 +1,8 @@
 package com.capsulecrm.qa.pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -130,5 +133,4 @@ public class AccountSettingPage extends TestBase {
 		ElementsUtil.clickByExplicitWait(ElementsUtil.ElementByDynamicXpath(driver, "Trash"), driver);
 		return ElementsUtil.getHeader(_h2LblElement);
 	}
-
 }

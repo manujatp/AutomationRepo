@@ -23,17 +23,17 @@ public class TracksPage extends TestBase {
 	private WebElement _addNewTrackBtnElement;
 
 
-	@FindBy(id = "j_id123:trackDescriptionDecorate:trackDescription")
+	@FindBy(xpath = "//input[contains(@id,':trackDescriptionDecorate:trackDescription')]")
 	private WebElement _nameTrackTxtElement;
 
-	@FindBy(id = "j_id123:trackTagDecorate:trackTag")
+	@FindBy(xpath = "//input[contains(@id,':trackTagDecorate:trackTag')]")
 	private WebElement _tagTrackTxtElement;
 
 
-	@FindBy(id = "j_id123:taskLines:0:taskDescriptionDecorate:taskDescription")
+	@FindBy(xpath = "//input[contains(@id,':taskLines:0:taskDescriptionDecorate:taskDescription')]")
 	private WebElement _descTaskTxtElement;
 
-	@FindBy(id = "j_id123:taskLines:0:taskDaysAfterDecorate:taskDaysAfter")
+	@FindBy(xpath = "//input[contains(@id,':taskLines:0:taskDaysAfterDecorate:taskDaysAfter')]")
 	private WebElement _daysTaskTxtElement;
 
 	@FindBy(xpath = "//a[text()='Save']")

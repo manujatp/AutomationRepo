@@ -23,14 +23,14 @@ public class TagsPage extends TestBase {
 	@FindBy(xpath = "//a[text()='Add new Tag']")
 	private WebElement _addNewCategoryBtnElement;
 
-	@FindBy(id = "j_id177:tagNameDecorate:tagName")
+	@FindBy(xpath = "//input[contains(@id,':tagNameDecorate:tagName')]")
 	private WebElement _tagTxtElement;
 
-	@FindBy(xpath = "//input[@id='j_id177:j_id210']")
+	@FindBy(xpath = "//input[contains(@class,'btn-primary singlesubmit')]")
 	private WebElement _saveBtnElement;
 
 
-	@FindBy(xpath = "//table[@id = 'j_id125:tags']//tbody//tr//td[1]//span[@style]//a")
+	@FindBy(xpath = "//table[contains(@id, ':tags']//tbody//tr//td[1]//span[@style]//a")
 	private List<WebElement> _tagList;
 
 	//Constructor

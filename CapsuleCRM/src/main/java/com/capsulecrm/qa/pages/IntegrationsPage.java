@@ -16,8 +16,8 @@ public class IntegrationsPage extends TestBase {
 	@FindBy(xpath ="//h2[contains(@class,'settings-page-header')]")
 	private WebElement _h2LblElement;
 
-
-	@FindBy(xpath = "//table[@id ='j_id124:searchresults']//tbody//tr//td//a[text()='Configure']")
+	//table[contains(@id,':searchresults')]//tbody//tr//td
+	@FindBy(xpath = "//a[text()='Configure']")
 	private List<WebElement> _configEvnList;
 
 	// Constructor
