@@ -1,23 +1,5 @@
 ###########Selenium Coding Challenge 3 :CapsuleCRM.com############
 
-
-Important Informations
-
- In the first scenario:
-
-1.  While adding case for same person, person name is not auto completing, giving error.
-    Note: It was possible when I run it days before.
-
-  In the second scenario:
-
-2. Duplication of Task Category(in AccountSetting-TaskCategories link) and Milestone(in AccountSetting-Opportunities link)
-   values are not allowed, so please change the value of TS:TaskCategry in the Excel(src/main/resources/data/TestData.xlsx)
-   and change the value of milestone in the dataProvider name : testDataForOPnTR (method name AccSetOpportunityTest
-   (in src/main/java/com/capsulecrm/qa/util/DataProviderUtil.java)
-   Note: Tried to delete after adding and validation but the milestone can't delete fully(changing to Restore)
-
-3 Logs are generating in console and in file SOLUTION_LOGS in the source directory
-
 *******Project Covergae********
 First Scenario:
 --------------
