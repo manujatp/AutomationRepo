@@ -33,8 +33,7 @@ Second Test AccountSettingValidTest in class AccountSettingTest
 4. Clicking on User and doing header validation using hard assertion and adding new user (Only 2 users can add 
     so checking it before adding) and validating it using soft validation.
 5. Clicking on Task Categories and doing  header validation and adding new task and validating it.
-    ***Duplication of Task Category(in AccountSetting-TaskCategories link) values are not allowed,
-       so please change the value of TS:TaskCategry in the Excel(src/main/resources/data/TestData.xlsx)
+   
 6. Clicking on Tags and doing header validation and adding new Tag and validating it.
 
 Third Test AccSetIntegrationTest in class AccountSettingTest
@@ -48,9 +47,7 @@ Fouth Test AccSetOpportunityTestin class AccountSettingTest
 
 1. Clicking on Opprotunities link and doing header validation using hard assertion and 
    adding new milestone and validating it(Data from DataProvider : having numeric value from excel its taking with '.0')
-     ***Duplication of Milestone(in AccountSetting-Opportunities link) values are not allowed, so please change the value
-        of milestone in the dataProvider name : testDataForOPnTR (method name AccSetOpportunityTest
-           (in src/main/java/com/capsulecrm/qa/util/DataProviderUtil.java)
+    
 
 Fifth Test AccSetTrackTestclass AccountSettingTest
 --------------------------------------------------
